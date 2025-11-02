@@ -12,17 +12,24 @@ function Home2() {
               About Me
             </h1>
                     
-            <p className="home-description">
+            <p className="home-description"> 
+            I’m a software developer with {" "}
+            <b className="purple">
+                  3 years{" "}
+            </b> 
+            of expereince in designing, developing, and deploying software solutions across various domains. 
+
             I’m currently pursuing {" "}
             <b className="purple">
                   Master's in Information Technology{" "}
-            </b>
+            </b> 
             at{" "}
             <b className="purple">
               Arizona State University
             </b>
             .
-            <br/>
+            <br />
+            <br />           
             I bring hands-on experience in 
                 <b className="purple">
                   {" "}
@@ -34,10 +41,10 @@ function Home2() {
                   AI, ML, and cloud computing.{" "}
                 </b>
                 From developing automation workflows that reduce manual work to designing intuitive dashboards and full-stack web applications, 
-                I aim to create efficient, user-friendly, and data-driven solutions. 
-                I believe in using technology not just to solve problems, but to simplify and empower.
+                I aim to create efficient, user-friendly, and data-driven solutions. I believe in using technology not just to solve problems,
+                 but to simplify and empower.{" "}
               <br />
-              
+                      
               <br />
               I built projects like 
               <b className="purple"> Supermarket Sales Dashboard, IT Help Desk Ticket Tracking System and Book Recommender System</b> using {" "}
@@ -57,10 +64,10 @@ function Home2() {
 
         <Techstack />
 
-        <h1 className="project-heading">
+        {/* <h1 className="project-heading">
           Tools Used
         </h1>
-        <Toolstack /> 
+        <Toolstack />  */}
 
       </Container>
     </Container>
