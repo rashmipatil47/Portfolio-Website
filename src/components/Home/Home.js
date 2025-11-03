@@ -20,7 +20,7 @@ function Home() {
         <Row>
           <Col className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" style={{width: "150px", height: "165px", borderRadius: "50%", objectFit: "cover"}}/>
+              <img src={myImg} className="img-fluid" alt="avatar" style={{width: "200px", height: "220px", borderRadius: "50%", objectFit: "cover"}}/>
             </Tilt>
           </Col>
         </Row>
