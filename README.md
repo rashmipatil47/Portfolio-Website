@@ -206,4 +206,4 @@ Update:
 
 ## 📞 Support
 
-Questions? Reach out at rashmipatil47@gmail.com
+Questions? Reach out at rashmipatil34@gmail.com
