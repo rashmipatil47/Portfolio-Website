@@ -53,8 +53,8 @@ const Education = () => (
 
       <div className="edu-stats">
         {[
-          { value: '4.0', label: 'MS GPA at ASU', suffix: '/4.0' },
-          { value: '4+', label: 'Years Experience', suffix: '' },
+          { value: '4.0', label: 'Masters GPA at ASU', suffix: '/4.0' },
+          { value: '3+', label: 'Years Experience', suffix: '' },
           { value: '200+', label: 'Issues Resolved', suffix: '' },
           { value: '30%', label: 'Downtime Reduction', suffix: '' },
         ].map((stat, i) => (

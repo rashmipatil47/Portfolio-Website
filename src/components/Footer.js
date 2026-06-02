@@ -2,7 +2,7 @@ import React from 'react';
 import { personalInfo } from '../data/portfolioData';
 import './Footer.css';
 
-const navLinks = ['Home', 'About', 'Skills', 'Projects', 'Experience', 'Education', 'Contact'];
+
 
 const Footer = () => {
   const scrollTo = (section) => {
@@ -12,26 +12,9 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="container footer-inner">
-        <div className="footer-brand">
-          <div className="footer-logo" onClick={() => scrollTo('Home')}>
-            <span className="logo-bracket">&lt;</span>
-            <span className="logo-name">Rashmi</span>
-            <span className="logo-bracket">/&gt;</span>
-          </div>
-          <p className="footer-tagline">Full Stack Engineer · Tempe, AZ</p>
-        </div>
-
-        <nav className="footer-nav">
-          {navLinks.map(link => (
-            <button key={link} className="footer-nav-link" onClick={() => scrollTo(link)}>
-              {link}
-            </button>
-          ))}
-        </nav>
-
         <div className="footer-bottom">
           <p className="footer-copy">
-            © {new Date().getFullYear()} Rashmi Venkangouda Patil — Built with React & Claude AI ✨
+            © {new Date().getFullYear()} Rashmi Venkangouda Patil — Built with React ✨
           </p>
           <div className="footer-socials">
             <a href={personalInfo.github} target="_blank" rel="noreferrer" className="footer-social" aria-label="GitHub">

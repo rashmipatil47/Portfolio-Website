@@ -1,5 +1,6 @@
 import React from 'react';
 import { personalInfo } from '../data/portfolioData';
+import resumePDF from '../assets/Rashmi_Patil_Resume.pdf';
 import './About.css';
 
 const About = () => (
@@ -7,55 +8,56 @@ const About = () => (
     <div className="container about-container">
       <div className="about-visual">
         <div className="about-card-main">
-          <div className="about-avatar-lg">👩‍💻</div>
+          
+            <div className="about-avatar-lg">👩‍💻</div>
+          
           <h3>{personalInfo.nameShort}</h3>
           <p className="about-card-role">{personalInfo.title}</p>
           <div className="about-card-badges">
             <span className="tag">GPA 4.0 — ASU</span>
-            <span className="tag">Full Stack</span>
+            <span className="tag">Software Engineer</span>
             <span className="tag">GenAI / LLM</span>
           </div>
         </div>
         <div className="about-card-mini card-mini-1">
-          <span className="mini-icon">🚀</span>
+          <span className="mini-icon">&#127942;</span>
           <div>
-            <p className="mini-value">4+</p>
-            <p className="mini-label">Years Exp.</p>
+            <p className="mini-value">WIE</p>
+            <p className="mini-label">IEEE Treasurer</p>
           </div>
         </div>
         <div className="about-card-mini card-mini-2">
-          <span className="mini-icon">✅</span>
+          <span className="mini-icon">&#11088;</span>
           <div>
-            <p className="mini-value">200+</p>
-            <p className="mini-label">Issues Fixed</p>
+            <p className="mini-value">Cheers</p>
+            <p className="mini-label">Cognizant Award</p>
           </div>
         </div>
       </div>
 
       <div className="about-content">
         <p className="section-label">About me</p>
-        <h2 className="section-title">Crafting Digital <span>Experiences</span></h2>
+        <h2 className="section-title">Building AI-Powered <span>Experiences</span></h2>
 
         <p className="about-text">
-          I'm a Full Stack Engineer with an MS in Information Technology from Arizona State University 
-          (GPA 4.0) and 4+ years of hands-on industry experience. I've shipped scalable production 
-          applications at Cognizant, contributed to GenAI/LLM products at Kingship AI Inc, and automated 
-          workflows at ASU.
+          I'm a Software Development Engineer with an MS from Arizona State University (GPA 4.0) and 3+ years shipping
+          production backend systems and AI-powered applications. Currently at Kingship AI Inc building GenAI pipelines
+          with Gemini 2.5 Pro, FastAPI and React.js.
         </p>
         <p className="about-text">
-          I specialize in React.js + Node.js ecosystems and love bridging clean, accessible UIs with 
-          high-performance backends. I'm equally comfortable with Python, Django, ML pipelines, and 
-          cloud deployments on AWS — and I genuinely enjoy integrating AI capabilities into real products.
+          I specialize in agentic AI workflows, RAG pipelines and LLM integrations using LangGraph, LangChain and Claude AI.
+          Equally comfortable architecting microservices, optimizing databases, and deploying on AWS with Docker and Kubernetes.
         </p>
 
         <div className="about-highlights">
           {[
-            { icon: '⚡', title: 'Performance Focused', desc: 'Reduced downtime 30% and boosted query performance at Cognizant' },
-            { icon: '🤖', title: 'GenAI Experience',   desc: 'Optimizing LLM functionality at Kingship AI Inc with Python' },
-            { icon: '🤝', title: 'Full SDLC',          desc: 'Requirements → UAT → deployment → prod support' },
+            { icon: '&#129302;', title: 'Agentic AI',      desc: 'LangGraph multi-agent systems, RAG pipelines, Claude AI & Gemini integrations' },
+            { icon: '&#129309;', title: 'Full SDLC',        desc: 'Ideation → Design → Development → Testing → Deployment → Monitoring → Maintenance' },
+            { icon: '&#127885;', title: 'Leadership',       desc: 'WIE Treasurer (IEEE) & Sports Secretary, CSE Department' },
+            { icon: '&#11088;',  title: 'Cheers Award',     desc: 'Received from Cognizant for outstanding contribution & consistent excellence' },
           ].map((h, i) => (
             <div className="highlight-item" key={i}>
-              <span className="highlight-icon">{h.icon}</span>
+              <span className="highlight-icon" dangerouslySetInnerHTML={{__html: h.icon}}/>
               <div>
                 <p className="highlight-title">{h.title}</p>
                 <p className="highlight-desc">{h.desc}</p>
@@ -65,7 +67,7 @@ const About = () => (
         </div>
 
         <div className="about-actions">
-          <a href={personalInfo.resumeUrl} className="btn-primary" download>
+          <a href={resumePDF} className="btn-primary" download="Rashmi_Patil_Resume.pdf">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
               <polyline points="7,10 12,15 17,10"/>

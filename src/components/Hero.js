@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import { personalInfo } from '../data/portfolioData';
 import './Hero.css';
@@ -24,7 +24,7 @@ const Hero = () => {
         <div className="hero-content">
           <div className="hero-badge">
             <span className="badge-dot" />
-            Open to opportunities · Tempe, AZ
+            Open to opportunities · United States
           </div>
 
           <h1 className="hero-title">
