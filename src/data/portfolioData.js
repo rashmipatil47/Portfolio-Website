@@ -1,8 +1,10 @@
+import profilePhotoImg from '../assets/mypic.jpg';
+
 export const personalInfo = {
   name: "Rashmi Venkangouda Patil",
   nameShort: "Rashmi Patil",
   title: "Software Development Engineer",
-  profilePhoto: "👩‍💻",
+  profilePhoto: profilePhotoImg,
   roles: [
     "Software Development Engineer",
     "AI / GenAI Engineer",
@@ -22,26 +24,16 @@ export const personalInfo = {
 };
 
 export const skills = {
-  frontend: [
-    { name: "React.js", level: 92, icon: "⚛️" },
-    { name: "JavaScript / TypeScript", level: 88, icon: "🟨" },
-    { name: "HTML5 / CSS3", level: 94, icon: "🌐" },
-    { name: "Angular", level: 76, icon: "🔴" },
-  ],
+  frontend: ["React.js", "Angular", "JavaScript", "TypeScript", "HTML5", "CSS3"],
   backend: [
-    { name: "Python / FastAPI", level: 93, icon: "🐍" },
-    { name: "Node.js / Django", level: 87, icon: "🟢" },
-    { name: "PostgreSQL / MongoDB / MySQL", level: 85, icon: "🐬" },
-    { name: "Docker / Kubernetes", level: 82, icon: "🐳" },
-    { name: "AWS + Jenkins / GitHub Actions", level: 80, icon: "☁️" },
+    "Python", "Java", "C#", "Go", "SQL",
+    "FastAPI", "Django", "Node.js", "REST APIs", "Microservices",
+    "PostgreSQL", "MongoDB", "MySQL",
   ],
-  tools: [
-    { name: "LangGraph / LangChain", level: 90, icon: "🔗" },
-    { name: "RAG + Vector Databases", level: 88, icon: "🧠" },
-    { name: "LLMs (Claude AI, Gemini)", level: 90, icon: "🤖" },
-    { name: "Prometheus / Grafana", level: 78, icon: "📊" },
-    { name: "Langfuse / CrewAI", level: 80, icon: "🔭" },
-    { name: "Databricks / Tableau", level: 75, icon: "💠" },
+  tools: ["AWS (EC2, Lambda, S3, DynamoDB)", "Docker", "Kubernetes", "Jenkins", "GitHub Actions"],
+  ai: [
+    "LangGraph", "LangChain", "RAG", "Prompt Engineering",
+    "Vector Databases", "LLMs", "Langfuse", "CrewAI",
   ],
 };
 
@@ -154,37 +146,38 @@ export const experience = [
     location: "San Jose, California",
     duration: "February 2026 – Present",
     bullets: [
-      "Engineered GenAI pipelines using Gemini 2.5 Pro and PyMuPDF for intelligent PDF and DOCX document processing.",
-      "Designed structured prompt engineering across 3 Gemini 2.5 Flash backend services with Pydantic-validated JSON outputs.",
-      "Developed multi-step React.js wizard with FastAPI integration feeding structured user inputs to Gemini API.",
-      "Built 10+ FastAPI endpoints with MongoDB covering full CRUD, LLM integration and production workflows.",
+      "Engineered AI-powered document processing services using Python, FastAPI, Gemini 2.5, and PyMuPDF, reducing manual processing effort by 80% and improving structured data extraction accuracy.",
+      "Built and maintained 4+ production FastAPI microservices with MongoDB, enabling secure CRUD operations, seamless third-party AI integration, and delivering features through Agile sprint collaboration.",
+      "Designed resilient prompt orchestration across multiple backend AI services using Pydantic validation, achieving 99%+ structured JSON consistency and minimizing downstream processing failures in production workflows.",
+      "Developed scalable REST APIs integrated with React.js frontend workflows, reducing document submission time by 40% while improving user experience, responsiveness, and overall system reliability.",
     ],
     tech: ["Python", "FastAPI", "React.js", "Google Gemini 2.5", "PyMuPDF", "MongoDB", "Pydantic"],
   },
   {
-    role: "Software Engineer",
+    role: "Software Development Engineer",
     company: "Cognizant Technology Solutions",
     location: "Chennai, India",
     duration: "July 2021 – December 2023",
     bullets: [
-      "Built RESTful APIs and microservices using Node.js and Django across 5+ production applications.",
-      "Developed reusable React.js components integrating frontend with backend APIs across 3+ client applications.",
-      "Implemented JWT and OAuth authentication securing microservices with role-based access control.",
-      "Optimized SQL queries and schema design reducing average backend response time by 30%.",
-      "Containerized microservices with Docker, built Jenkins CI/CD pipelines and orchestrated Kubernetes deployments on AWS.",
-      "Resolved 200+ production incidents across backend services maintaining SLA compliance and reducing downtime.",
+      "Designed and implemented scalable RESTful APIs and microservices for multiple enterprise applications, improving backend scalability, system modularity, and accelerating feature delivery across distributed production environments.",
+      "Built reusable React.js components integrated with backend APIs, reducing frontend development effort by 30% while improving UI consistency, maintainability, and cross-product user experience.",
+      "Implemented JWT and OAuth-based authentication with role-based access control, strengthening application security, ensuring secure access to distributed services, and preventing unauthorized system interactions.",
+      "Optimized SQL queries and redesigned database schemas, decreasing API response times by 30% while improving data retrieval efficiency, scalability, and overall system performance under load.",
+      "Containerized backend services using Docker and automated deployments with Jenkins CI/CD pipelines on AWS and Kubernetes, reducing release time by 60% and improving deployment reliability.",
+      "Resolved 200+ production incidents and collaborated with QA, product, and engineering teams in Agile environments, maintaining 99.9% uptime while delivering customer-facing features on schedule.",
     ],
     tech: ["React.js", "Node.js", "Python", "Django", "RESTful APIs", "Docker", "Kubernetes", "AWS", "Jenkins", "SQL"],
   },
   {
-    role: "AI Engineer Intern",
+    role: "Software Development Engineer Intern",
     company: "Rubixe Pvt Ltd",
     location: "Bangalore, India",
     duration: "January 2021 – June 2021",
     bullets: [
-      "Built and tuned ML models including Random Forest, KNN and Decision Trees improving precision by 12%.",
-      "Performed EDA on large datasets using Pandas, NumPy and Seaborn extracting actionable business insights.",
-      "Presented analytical findings via Tableau dashboards to non-technical stakeholders.",
+      "Developed RESTful APIs using .NET Core (C#) to support vendor data integration workflows, enabling reliable ingestion, transformation, and delivery of merchandising data across internal systems and services.",
+      "Built Angular-based frontend components for internal dashboards, consuming backend APIs to display processed planning and merchandising data, improving visibility and usability for engineering and business users.",
+      "Assisted in designing and maintaining SQL Server–based data processing workflows, writing optimized queries and supporting batch jobs for structured data movement across staging and application layers.",
+      "Contributed to CI/CD pipeline setup using Azure DevOps for .NET services, supporting automated builds, testing, and deployments while applying secure coding practices and basic API security validations.",
     ],
     tech: ["Python", "Scikit-learn", "TensorFlow", "Matplotlib", "Keras", "Tableau"],
   },

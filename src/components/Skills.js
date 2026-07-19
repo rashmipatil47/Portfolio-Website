@@ -3,28 +3,12 @@ import { useInView } from 'react-intersection-observer';
 import { skills } from '../data/portfolioData';
 import './Skills.css';
 
-const SkillBar = ({ name, level, icon, inView }) => (
-  <div className="skill-item">
-    <div className="skill-info">
-      <span className="skill-icon">{icon}</span>
-      <span className="skill-name">{name}</span>
-      <span className="skill-percent">{level}%</span>
-    </div>
-    <div className="skill-bar">
-      <div
-        className="skill-fill"
-        style={{ width: inView ? `${level}%` : '0%' }}
-      />
-    </div>
-  </div>
-);
-
-const tabs = ['frontend', 'backend', 'tools'];
-const tabLabels = { frontend: '🎨 Frontend', backend: '⚙️ Backend', tools: '🛠️ Tools' };
+const tabs = ['all', 'frontend', 'backend', 'tools', 'ai'];
+const tabLabels = { all: '✨ All', frontend: '🎨 Frontend', backend: '⚙️ Backend', tools: '🛠️ Tools', ai: '🤖 AI' };
 
 const Skills = () => {
-  const [activeTab, setActiveTab] = useState('frontend');
-  const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: true });
+  const [activeTab, setActiveTab] = useState('all');
+  const { ref } = useInView({ threshold: 0.2, triggerOnce: true });
 
   return (
     <section id="skills" className="section skills" ref={ref}>
@@ -48,14 +32,8 @@ const Skills = () => {
         </div>
 
         <div className="skills-grid">
-          {skills[activeTab].map(skill => (
-            <SkillBar key={skill.name} {...skill} inView={inView} />
-          ))}
-        </div>
-
-        <div className="tech-cloud">
-          {Object.values(skills).flat().map(s => (
-            <span key={s.name} className="tech-chip">{s.icon} {s.name}</span>
+          {(activeTab === 'all' ? Object.values(skills).flat() : skills[activeTab]).map(name => (
+            <span key={name} className="tech-chip">{name}</span>
           ))}
         </div>
       </div>

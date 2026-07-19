@@ -87,7 +87,7 @@ const Hero = () => {
             <div className="avatar-ring ring-1" />
             <div className="avatar-ring ring-2" />
             <div className="avatar-circle">
-              <span className="avatar-emoji">👩‍💻</span>
+              <img src={personalInfo.profilePhoto} alt={personalInfo.nameShort} className="avatar-photo" />
             </div>
             <div className="floating-badge badge-react">⚛️ React.js</div>
             <div className="floating-badge badge-node">🟢 Node.js</div>

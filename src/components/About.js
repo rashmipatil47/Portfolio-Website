@@ -9,7 +9,9 @@ const About = () => (
       <div className="about-visual">
         <div className="about-card-main">
           
-            <div className="about-avatar-lg">👩‍💻</div>
+            <div className="about-avatar-lg">
+              <img src={personalInfo.profilePhoto} alt={personalInfo.nameShort} className="about-avatar-photo" />
+            </div>
           
           <h3>{personalInfo.nameShort}</h3>
           <p className="about-card-role">{personalInfo.title}</p>

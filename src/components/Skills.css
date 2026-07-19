@@ -41,44 +41,10 @@
 }
 
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px 48px;
-  margin-bottom: 60px;
-}
-
-.skill-item { display: flex; flex-direction: column; gap: 8px; }
-
-.skill-info {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.skill-icon { font-size: 1rem; }
-.skill-name { flex: 1; font-size: 0.9rem; font-weight: 500; color: var(--text-primary); }
-.skill-percent { font-size: 0.8rem; font-weight: 600; color: var(--text-secondary); }
-
-.skill-bar {
-  height: 6px;
-  background: var(--bg-primary);
-  border-radius: 3px;
-  overflow: hidden;
-}
-
-.skill-fill {
-  height: 100%;
-  background: linear-gradient(90deg, var(--accent), var(--accent-2));
-  border-radius: 3px;
-  transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.tech-cloud {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  padding-top: 40px;
-  border-top: 1px solid var(--border-subtle);
+  margin-bottom: 60px;
 }
 
 .tech-chip {
@@ -98,8 +64,4 @@
   color: #fff;
   border-color: transparent;
   transform: translateY(-2px);
-}
-
-@media (max-width: 640px) {
-  .skills-grid { grid-template-columns: 1fr; }
 }

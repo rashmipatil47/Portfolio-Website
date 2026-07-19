@@ -41,7 +41,15 @@
   align-items: center;
   justify-content: center;
   font-size: 2.4rem;
+  overflow: hidden;
   animation: float 4s ease-in-out infinite;
+}
+
+.about-avatar-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .about-card-main h3 {
